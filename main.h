@@ -28,7 +28,8 @@ int integer_handler(va_list arg, char *buffer, unsigned int buffer_size);
 int string_handler(va_list arg, char *buffer, unsigned int buffer_size);
 int per_handler(va_list ar __attribute__((unused)), char *a, unsigned int b);
 int binary_handler(va_list arg_list, char *buffer, unsigned int buf_size);
-
+int pointer_handler(va_list val);
+int hexa_handler(unsigned long int num);
 
 unsigned int buffer_handler(char *buffer, char ch, unsigned int buffer_size);
 int _putchar(char *buffer, int buffersize);
